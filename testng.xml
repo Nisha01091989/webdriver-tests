@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Leaftaps">
+<suite name="Leaftaps" thread-count="2" parallel="classes">
   <test name="Leads">
     <classes>
-      <class name="com.leaftaps.testcases.TC001_JustLogin"/>
+      <class name="com.leaftaps.testcases.LoginFirefox"/>
+      <class name="com.leaftaps.testcases.LoginChrome"/>
     </classes>
   </test> 
 </suite>
